@@ -8,3 +8,9 @@ and i can just declare a const variable if one of the variables to calculate it 
 correction for this line : A `const` variable must be initialized with a constant expression and is immutable.
 
 so i use let mut to declare a mutable variable
+
+exercises/02_basic_calculator/04_panics/src/lib.rs
+
+there i learned that one has to use no () in the if statement, and for the panic you just put the panic with parentheses and then the message inside
+
+important, there is a ! in the panic, don't forget it !
