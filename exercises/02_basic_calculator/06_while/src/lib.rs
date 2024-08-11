@@ -1,16 +1,7 @@
 // Rewrite the factorial function using a `while` loop.
 pub fn factorial(n: u32) -> u32 {
     // We pretend that n is going to be 3, and the result should be 6
-   let mut bud:u32 = 1;
 
-   let mut malenia:u32 = n;
-
-   while malenia > 1 {
-    bud *= malenia;
-    malenia -= 1;
-   }
-
-   bud
 }
 
 #[cfg(test)]
