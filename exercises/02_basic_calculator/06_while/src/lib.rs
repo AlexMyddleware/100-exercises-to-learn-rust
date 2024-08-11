@@ -6,7 +6,7 @@ pub fn factorial(n: u32) -> u32 {
     // It panics at runtime.
     let mut result: u32 = 1;
 
-    result;
+    result
 }
 
 #[cfg(test)]
