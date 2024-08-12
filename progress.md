@@ -14,3 +14,9 @@ exercises/02_basic_calculator/04_panics/src/lib.rs
 there i learned that one has to use no () in the if statement, and for the panic you just put the panic with parentheses and then the message inside
 
 important, there is a ! in the panic, don't forget it !
+
+---------------------------------------------------------
+
+exercises\02_basic_calculator\07_for\src\lib.rs
+need to not put space in the for loop for i in (2..=n).rev() {
+because else it will not work
