@@ -33,7 +33,7 @@ impl Ticket {
             panic!("Description cannot be empty");
         }
 
-        if status.matches!("To-Do" | "In Progress" | "Done") {
+        if status.matches!(status.as_str(), "To-Do" | "In Progress" | "Done") {
             panic!("Only `To-Do`, `In Progress`, and `Done` statuses are allowed");
         }
         Self {
