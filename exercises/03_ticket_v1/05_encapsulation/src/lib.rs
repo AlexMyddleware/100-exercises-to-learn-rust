@@ -30,6 +30,12 @@ pub mod ticket {
             }
         }
 
+        pub fn title(Ticket) -> String {
+            Ticket.title
+        }
+
+
+
         // TODO: Add three public methods to the `Ticket` struct:
         //  - `title` that returns the `title` field.
         //  - `description` that returns the `description` field.
