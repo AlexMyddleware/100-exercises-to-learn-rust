@@ -30,7 +30,7 @@ pub mod ticket {
             }
         }
 
-        pub fn title(&self) -> str {
+        pub fn title(&self) -> &str {
             Ticket.title
         }
 
