@@ -31,7 +31,7 @@ pub mod ticket {
         }
 
         pub fn title(&self) -> &str {
-            Ticket.title
+            self.title
         }
 
         pub fn description(&self) -> &str {
