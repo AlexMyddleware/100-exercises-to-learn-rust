@@ -11,11 +11,11 @@ pub struct Ticket {
 
 impl Ticket {
     pub fn new(title: String, description: String, status: String) -> Ticket {
-        self::check_title(&title);
-        self::check_description(&description);
-        self::check_status(&status);
-        self::title_50(&title);
-        self::description_500(&description);
+        Ticket::check_title(&title);
+        Ticket::check_description(&description);
+        Ticket::check_status(&status);
+        Ticket::title_50(&title);
+        Ticket::description_500(&description);
 
         Ticket {
             title,
@@ -68,19 +68,19 @@ impl Ticket {
     }
 
     pub fn set_title(&mut self, new_title: String) {
-        self::check_title(&new_title);
-        self::title_50(&new_title);
+        Ticket::check_title(&new_title);
+        Ticket::title_50(&new_title);
         self.title = new_title;
     }
 
     pub fn set_description(&mut self, new_description: String) {
-        self::check_description(&new_description);
-        self::description_500(&new_description);
+        Ticket::check_description(&new_description);
+        Ticket::description_500(&new_description);
         self.description = new_description;
     }
 
     pub fn set_status(&mut self, new_status: String) {
-        self::check_status(&new_status);
+        Ticket::check_status(&new_status);
         self.status = new_status;
     }
 }
