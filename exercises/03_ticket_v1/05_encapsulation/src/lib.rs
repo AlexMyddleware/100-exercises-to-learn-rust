@@ -30,7 +30,7 @@ pub mod ticket {
             }
         }
 
-        pub fn title(Ticket) -> String {
+        pub fn title(self) -> String {
             Ticket.title
         }
 
