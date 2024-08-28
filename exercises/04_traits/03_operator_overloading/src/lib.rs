@@ -7,12 +7,6 @@ struct Ticket {
 }
 
 // TODO: Implement the `PartialEq` trait for `Ticket`.
-// trait PartialEq {
-//     fn eq(&self, other: &Self) -> bool;
-
-//     fn ne(&self, other: &Self) -> bool;
-// }
-
 impl PartialEq for Ticket {
     fn eq(&self, other: &Self) -> bool {
         self.title == other.title && self.description == other.description && self.status == other.status
